@@ -1,18 +1,15 @@
 import './App.css'
-import Hero from './section/Hero'
+import Hero from './section/Hero';
 import PopularProduct from "./section/PopularProduct";
-import SuperQuality from "./section/";
+import SuperQuality from "./section/SuperQuality";
 import Services from "./section/Services";
 import SpecialOffers from './section/SpecialOffer';
-import SuperQuality from './section/SuperQuality';
-import Nav from './Component/Nav';
+import Nav from './assets/Component/Nav';
 import Footer from './section/Footer'
 import Subscribe from './section/Subscribe'
-
+import CustomerReviews from './section/CustomerReviews'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <main className='relative'>
            <Nav/> 
