@@ -1,4 +1,13 @@
 import './App.css'
+import Hero from './section/Hero'
+import PopularProduct from "./section/PopularProduct";
+import SuperQuality from "./section/";
+import Services from "./section/Services";
+import SpecialOffers from './section/SpecialOffer';
+import SuperQuality from './section/SuperQuality';
+import Nav from './Component/Nav';
+import Footer from './section/Footer'
+import Subscribe from './section/Subscribe'
 
 
 function App() {
@@ -6,34 +15,34 @@ function App() {
 
   return (
     <main className='relative'>
-           Nav 
+           <Nav/> 
            <section className='xl:padding-1 wide:padding-r padding-b'>
-                 {/* Hero */}
+                 <Hero/> 
            </section>
            <section className='padding'>
-                 {/* PopularProducts */}  
+                 <PopularProduct/>  
            </section>
            
            <section className='padding'>
-                 {/* SuperQuality */}  
+                 <SuperQuality/> 
            </section>
 
            <section className='padding-x py-10'>
-                  {/* Services */} 
+                  <Services/>
            </section>
 
            <section className='padding'>
-                 {/* SpecialOffers */}  
+                <SpecialOffers/> 
            </section>
 
-           <section className='padding'>
-                 {/* CustomerReviews */}  
+           <section className='bg-pale-blue padding'>
+                 <CustomerReviews/>  
            </section>
            <section className='padding'>
-                 {/* SpecialOffers */}  
+                 <Subscribe/>  
            </section>
-           <section className='padding'>
-                 {/* SpecialOffers */}  
+           <section className='bg-black padding-x paddint-t pb-8'>
+                 <Footer/>  
            </section>
     </main>
   )
