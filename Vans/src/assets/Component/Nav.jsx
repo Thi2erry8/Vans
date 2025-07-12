@@ -9,7 +9,7 @@ function Nav(){
             <a href="#"> 
               <img className='h-[70px] w-auto' src={VansLogo} alt="" />
             </a>
-            <ul className=' flex justify-center items-center gap-16 w-fit'>
+            <ul className=' flex justify-center items-center gap-16 w-fit max-lg:hidden'>
                  {navLinks.map((item) =>(
                   <li key={item.label}>
                       <a href={item.href} className='text-lg text-slate-600' >
@@ -20,6 +20,9 @@ function Nav(){
 
                  }
             </ul>
+            <div className='hidden max-lg:block'>
+                  <i className="ri-menu-line text-3xl cursor-pointer "></i>
+            </div>
             </nav>
     </header>
   )
