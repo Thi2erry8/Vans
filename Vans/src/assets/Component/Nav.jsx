@@ -3,7 +3,7 @@ import {navLinks} from '../constants/index'
 
 function Nav(){
   return(
-    <header className=' absolute z-10 w-full'>
+    <header className=' absolute z-10 w-full px-4'>
            <nav className='flex justify-between items-center
            max-container'>
             <a href="#"> 
@@ -12,7 +12,7 @@ function Nav(){
             <ul className=' flex justify-center items-center gap-16 w-fit max-lg:hidden'>
                  {navLinks.map((item) =>(
                   <li key={item.label}>
-                      <a href={item.href} className='text-lg text-slate-600' >
+                      <a href={item.href} className='text-lg text-slate-900 hover:text-slate-600 ease-in-out' >
                           {item.label}
                       </a>
                   </li>
