@@ -34,6 +34,9 @@ function Hero(){
                                    ))} 
                      </div>
             </div>
+            <div className="">
+              
+            </div>
     </section>
   )
 }
