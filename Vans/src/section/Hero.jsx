@@ -1,5 +1,7 @@
 import {statistics} from '../assets/constants/index'
-
+import Vans1 from '../assets/images/Vans_1.jpg';
+import Vans2 from '../assets/images/Vans_2.jpg';
+import Vans3 from '../assets/images/Vans_3.jpg';
 
 function Hero(){
   return (
@@ -34,8 +36,8 @@ function Hero(){
                                    ))} 
                      </div>
             </div>
-            <div className="">
-              
+            <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-cover bg-center">
+                  <img src={Vans1} alt="" height={610} width={500} className='object-contain relative z-10'/>
             </div>
     </section>
   )
