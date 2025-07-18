@@ -1,11 +1,38 @@
 import {statistics} from '../assets/constants/index'
+import { useState } from 'react';
 import Vans1 from '../assets/images/Vans_1.jpg';
 import Vans2 from '../assets/images/Vans_2.jpg';
 import Vans3 from '../assets/images/Vans_3.jpg';
 
 function Hero(){
-  return (
-    <section id="home" className="w-full flex /* xl:flex-row */ flex-col justify-center min-h-screen gap-10 max-container ">
+       const [bigIMG , setbigIMG] = useState(Vans1) ;
+  
+        function ChangebigIMG (shoe) {
+           setbigIMG(shoe)
+       }; 
+
+       const Shoes = [{
+                  src: Vans1 ,  
+                  index: 1     
+               },
+               {
+                  src: Vans2 ,  
+                  index: 2
+               },
+               {
+                  src: Vans3 ,  
+                  index: 3
+               }] ;
+     
+       const handleClick = (shoe) => {
+             if(bigIMG !== shoe){
+                ChangebigIMG(shoe)
+             } 
+             };  
+
+ 
+      return (
+    <section id="home" className="w-full flex /* xl:flex-row */ flex-col justify-center items-center min-h-screen gap-10 max-container px-5">
               <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
                                <p className='text-lg text-red-600'>
                                 Ours Best Rated
@@ -36,8 +63,24 @@ function Hero(){
                                    ))} 
                      </div>
             </div>
-            <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-cover bg-center">
-                  <img src={Vans1} alt="" height={610} width={500} className='object-contain relative z-10'/>
+         
+         
+            <div className="flex flex-col justify-center items-center">
+                 <div className="">
+                       <img src={bigIMG} alt="" /* height={610} width={500} */ className=' h-80 w-60 rounded-2xl relative z-10'/>
+                 </div>
+               
+               
+                 <div className="mt-4 flex h-[80px] flex-1 flex-row justify-between items-center gap-3">
+                        {Shoes.map((shoe) => 
+                           <div key={shoe.index} className={` border-2 rounded
+                              ${bigIMG === shoe.src ? 'border-red-400' : 'border-transparent'}
+                              cursor-pointer max-sm:flex-1
+                              `} onClick={() => handleClick(shoe.src)} >
+                                 <img src={shoe.src} alt="sneaker picture" className=' h-20' />   
+                           </div>
+                         )}
+                  </div>
             </div>
     </section>
   )

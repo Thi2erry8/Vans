@@ -3,7 +3,7 @@ import {navLinks} from '../constants/index'
 
 function Nav(){
   return(
-    <header className=' absolute z-10 w-full px-4'>
+    <header className='bg-white/45  z-15 w-full px-4 fixed'>
            <nav className='flex justify-between items-center
            max-container'>
             <a href="#"> 
