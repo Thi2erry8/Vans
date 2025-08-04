@@ -14,7 +14,6 @@ function SuperQuality(){
                         every pair embodies Vans rebellious and authentic spirit while delivering 
                         flawless fit and performance year after year
                     </p>
-              
               </div>
 
               <div className="w-1/2 flex items-center justify-center">
