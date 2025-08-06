@@ -7,3 +7,4 @@ function ServiceCard (iconName , title , text){
         </div>
     )
 }
+export default ServiceCard
