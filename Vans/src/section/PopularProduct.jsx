@@ -8,19 +8,22 @@ function PopularProducts(){
             imgUrL : Vans1,
             name: "Old School Black",
             price: "$150.00",
-            rating: '4.1'
+            rating: '4.1',
+            id: 1
         },
         {
             imgUrL : Vans2,
             name: "Old School Sky Blue",
             price: "$130.00",
-            rating: '4.5'
+            rating: '4.5',
+            id: 2
         },
         {
             imgUrL : Vans3,
             name: "Old School Navy Green",
             price: "$115.00",
-            rating: '4.8'
+            rating: '4.8',
+            id: 3
         }
     ];
     
@@ -39,9 +42,8 @@ function PopularProducts(){
                             </p>
                       </div>
                       <div className="mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
-                            {products.map((product , index)=>(
-                                <>
-                                <div className='flex flex-1 flex-col w-full max-sm:w-full'  key={index}>
+                            {products.map((product,index)=>(
+                                <div className='flex flex-1 flex-col w-full max-sm:w-full'  key={product.id}>
                                       <img className='w-auto h-[280px]'
                                       src={product.imgUrL} alt={product.name} />
                                       <div className="mt-4 flex justify-start gap-2.5">
@@ -50,7 +52,6 @@ function PopularProducts(){
                                         <h3 className='text-xl font-semibold text-slate-600'>{product.name}</h3>
                                         <p className='text-red-600'>{product.price}</p>
                                 </div>
-                                </>
                             ))}
                       </div>
             </section>
