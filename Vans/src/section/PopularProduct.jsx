@@ -42,7 +42,7 @@ function PopularProducts(){
                             </p>
                       </div>
                       <div className="mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
-                            {products.map((product,index)=>(
+                            {products.map((product)=>(
                                 <div className='flex flex-1 flex-col w-full max-sm:w-full'  key={product.id}>
                                       <img className='w-auto h-[280px]'
                                       src={product.imgUrL} alt={product.name} />

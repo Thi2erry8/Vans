@@ -26,9 +26,17 @@ function SpecialOffer(){
                       <p>Navigate a realm of possibilities designed to fullfil your uniques desires,
                         surpassing the lofties expectations. Your journey with us is nothing short of exceptional
                       </p>
-                      <div className="flex flex-row">
-                            
-                            <button>Learn more</button>
+                      <div className="flex flex-row gap-2">
+                          <button className="group mb-4 flex justify-center items-center gap-2 px-7 py-4 border text-lg leading-none bg-red-600 rounded-full text-white hover:bg-red-500 ease-out cursor-pointer">
+                                     Shop Now
+                                    <span className="flex justify-center items-center px-1 bg-white rounded-full">
+                                    <i className="ri-arrow-right-line text-red-600  text-xl group-hover:rotate-360 transition-transform duration-500 ease-in-out"></i>
+                                    </span> 
+                           </button>
+
+                           <button className='border border-gray-500 text-gray-500 mb-4 flex justify-center items-center gap-2 px-7 py-4 text-lg rounded-full'>
+                                     <p>Learn more</p>
+                           </button>
                       </div>
                 </div>
             </div>
