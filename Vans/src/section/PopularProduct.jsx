@@ -37,8 +37,8 @@ function PopularProducts(){
                             </h2>
                             <p className='lg:max-w-lg mt-2 text-slate-400'>
                                 Experience top-notch quality and
-                               style with our sought-after selections . 
-                               Discover a word of comfort , design , and value
+                                style with our sought-after selections . 
+                                Discover a word of comfort , design , and value
                             </p>
                       </div>
                       <div className="mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14">
