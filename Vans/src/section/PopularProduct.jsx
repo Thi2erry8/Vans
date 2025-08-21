@@ -47,7 +47,7 @@ function PopularProducts(){
                                       <img className='w-auto h-[280px]'
                                       src={product.imgUrL} alt={product.name} />
                                       <div className="mt-4 flex justify-start gap-2.5">
-                                            <p className='text-xl text-slate-500'>{product.rating}</p>
+                                            <p className='text-xl text-slate-500'><i className="text-red-600 mr-1 ri-star-fill"></i>{product.rating}</p>
                                       </div>  
                                         <h3 className='text-xl font-semibold text-slate-600'>{product.name}</h3>
                                         <p className='text-red-600'>{product.price}</p>
