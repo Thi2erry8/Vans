@@ -15,23 +15,20 @@ function SpecialOffer(){
                               style={{backgroundImage: `url(${Vans3})`}}></div>
                         </div>
                 </div>
-                <div className=" flex flex-col items-center justify-center h-1/2 w-1/2">
-                      <h2><span>Special</span> Offer</h2>
+                <div className=" flex flex-col items-center justify-start h-1/2 w-1/2 gap-4 px-4">
+                      <h2 className='text-3xl font-semibold' ><span className='text-red-600'>Special</span> Offer Shoes</h2>
                      
-                      <p>Embark on a shopping journey that redefines your experiece
+                      <p className='text-gray-700'>Embark on a shopping journey that redefines your experiece
                          with unbeateble deals. From premier selections to incredible save
                          we offer unparalled value that set us apart
                       </p>
 
-                      <p>Navigate a realm of possibilities designed to fullfil your uniques desires,
+                      <p className='text-gray-700'>Navigate a realm of possibilities designed to fullfil your uniques desires,
                         surpassing the lofties expectations. Your journey with us is nothing short of exceptional
                       </p>
                       <div className="flex flex-row gap-2">
                           <button className="group mb-4 flex justify-center items-center gap-2 px-7 py-4 border text-lg leading-none bg-red-600 rounded-full text-white hover:bg-red-500 ease-out cursor-pointer">
-                                     Shop Now
-                                    <span className="flex justify-center items-center px-1 bg-white rounded-full">
-                                    <i className="ri-arrow-right-line text-red-600  text-xl group-hover:rotate-360 transition-transform duration-500 ease-in-out"></i>
-                                    </span> 
+                                     View details 
                            </button>
 
                            <button className='border border-gray-500 text-gray-500 mb-4 flex justify-center items-center gap-2 px-7 py-4 text-lg rounded-full'>
