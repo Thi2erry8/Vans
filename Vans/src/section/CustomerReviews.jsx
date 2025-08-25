@@ -25,7 +25,7 @@ function CustomerReviews(){
             </div>
             <div className="w-full flex flex-row h-3/4 justify-evenly">
                       {customers.map((customer) =>(
-                        <div className=" w-2/5 flex flex-col items-center justify-center gap-1.5">
+                        <div key={customer.Name} className=" w-2/5 flex flex-col items-center justify-center gap-1.5">
                               <img className='rounded-full h-[150px] w-[150px]' src={customer.ProfilPic} alt={`picture of ${customer.Name}`} />
                               <p className='text-3xl font-bold'>{customer.Name}</p>
                               <p className='text-lg text-gray-500'><i className="ri-star-fill text-red-500"></i>{customer.rating}</p>

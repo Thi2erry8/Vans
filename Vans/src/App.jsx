@@ -5,7 +5,7 @@ import SuperQuality from "./section/SuperQuality";
 import Services from "./section/Services";
 import SpecialOffers from './section/SpecialOffer';
 import Nav from './assets/Component/Nav';
-import Footer from './section/Footer'
+import Footer from './section/Footer';
 import Subscribe from './section/Subscribe'
 import CustomerReviews from './section/CustomerReviews'
 
@@ -39,7 +39,7 @@ function App() {
                  <Subscribe/>  
            </section>
            <section className='bg-black padding-x paddint-t pb-8'>
-                 <Footer/>  
+                   <Footer/>  
            </section>
     </main>
   )
