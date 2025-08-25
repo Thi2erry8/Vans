@@ -30,7 +30,7 @@ function CustomerReviews(){
                               <p className='text-3xl font-bold'>{customer.Name}</p>
                               <p className='text-lg text-gray-500'><i className="ri-star-fill text-red-500"></i>{customer.rating}</p>
                               <p className='text-center text-gray-500 text-xl'>{customer.Review}</p>
-                        </div>
+                        </div>  
                       ))}
             </div>
      </div>
