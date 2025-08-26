@@ -1,4 +1,5 @@
 import './App.css'
+import VideoSlide from './section/VideoSlide';
 import Hero from './section/Hero';
 import PopularProduct from "./section/PopularProduct";
 import SuperQuality from "./section/SuperQuality";
@@ -13,9 +14,8 @@ function App() {
   return (
     <main className='relative'>
            <Nav/> 
-{/*            <section className='xl:padding-1 wide:padding-r padding-b'>
-                  
-           </section> */}<Hero/>
+           <VideoSlide/>
+           <Hero/>
            <section className='padding'>
                  <PopularProduct/>  
            </section>
