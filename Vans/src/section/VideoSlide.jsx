@@ -7,14 +7,12 @@ function VideoSlide(){
           {text1:'Authentic style' , text2:'for every day' }
         ]
         const [heroCount, setHeroCount] = useState(2);
-        const [playStatus,setplayStatus] = useState(true)
+        const [playStatus,setplayStatus] = useState(false)
   return(
        
         <section className="w-full h-screen relative">
-                  <>
-                  <p>La vie est belle</p>
                   <Background playStatus={playStatus} heroCount={heroCount}/>
-                  </>
+                   
         </section>
       )
 }
