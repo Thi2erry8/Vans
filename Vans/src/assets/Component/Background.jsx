@@ -1,13 +1,13 @@
-import Video from '../assets/images/Video.webm'
-import Vans1 from '../assets/images/Vans_4.avif';
-import Vans2 from '../assets/images/Vans_10.avif';
-import Vans3 from '../assets/images/Vans_7.avif';
+import Video from '../images/Video.webm'
+import Vans1 from '../images/Vans_4.avif';
+import Vans2 from '../images/Vans_10.avif';
+import Vans3 from '../images/Vans_7.jpg';
 
 const Background = ({playStatus,heroCount}) => {
 
     if(playStatus) {
         return (
-            <video className='h-full w-full flo' autoPlay loop muted>
+            <video className='h-full w-full float-left top-0 left-0 right-0 bottom-0 absolute p-0 object-cover z-[-1]' autoPlay loop muted>
                     <source src={Video} type='video/webm'/>
             </video>
         )
