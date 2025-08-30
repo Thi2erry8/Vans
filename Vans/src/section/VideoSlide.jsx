@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Background from "../assets/Component/Background"
+import Swicher from "../assets/Component/Switcher";
 function VideoSlide(){
       let heroData = [
           {text1:'Stylish sneakers' , text2:'with recycled materials' },
@@ -10,9 +11,15 @@ function VideoSlide(){
         const [playStatus,setplayStatus] = useState(false)
   return(
        
-        <section className="w-full h-screen relative">
+        <section className="w-full h-screen relative overflow-hidden">
                   <Background playStatus={playStatus} heroCount={heroCount}/>
-                   
+                  <Swicher
+                   heroCount ={heroCount}
+                   heroData ={heroData}
+                   playStatus={playStatus}
+                   setHeroCount={setHeroCount}
+                   setplayStatus={setplayStatus}
+                  /> 
         </section>
       )
 }
