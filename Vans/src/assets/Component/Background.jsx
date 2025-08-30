@@ -15,21 +15,21 @@ const Background = ({playStatus,heroCount}) => {
     else if(heroCount===0){
        return (
         <>
-        <img src={Vans1} alt="" />
+        <img className='h-full w-full float-left top-0 left-0 right-0 bottom-0 absolute p-0 object-cover z-[-1]' src={Vans1} alt="" />
         </>
        )   
     }
     else if(heroCount===1){
        return (
         <>
-        <img src={Vans2} alt="" />
+        <img className='h-full w-full float-left top-0 left-0 right-0 bottom-0 absolute p-0 object-cover z-[-1]' src={Vans2} alt="" />
         </>
        )  
     }
     else if(heroCount===2){
        return (
         <>
-        <img src={Vans3} alt="" />
+        <img className='h-full w-full float-left top-0 left-0 right-0 bottom-0 absolute p-0 object-cover z-[-1]' src={Vans3} alt="" />
         </>
        )  
     }

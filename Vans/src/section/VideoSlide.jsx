@@ -15,7 +15,7 @@ function VideoSlide(){
                   <Background playStatus={playStatus} heroCount={heroCount}/>
                   <Swicher
                    heroCount ={heroCount}
-                   heroData ={heroData}
+                   heroData ={heroData[heroCount]}
                    playStatus={playStatus}
                    setHeroCount={setHeroCount}
                    setplayStatus={setplayStatus}
