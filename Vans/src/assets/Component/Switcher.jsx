@@ -1,9 +1,9 @@
 export default function Switcher({heroCount ,heroData, playStatus,setHeroCount,setplayStatus}) {
   return (
     <div className="absolute z-10 w-full h-full flex flex-col items-center justify-end gap-40">
-          <div className="text-red-400 text-7xl">
-                <p className="text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-red-500">{heroData.text1}</p>
-                <p className="text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-red-500">{heroData.text2}</p>
+          <div className="text-7xl text-outline">
+                <p className="text-white text-5xl font-extrabold">{heroData.text1}</p>
+                <p className="text-white text-5xl font-extrabold">{heroData.text2}</p>
           </div>
           <div className="w-full flex flex-row justify-between items-center pb-7 px-9">
                 <div className="">
@@ -14,7 +14,7 @@ export default function Switcher({heroCount ,heroData, playStatus,setHeroCount,s
                       </ul>
                 </div>
                 <div className="cursor-pointer text-red-500 text-4xl bg-red-50 rounded-full flex flex-row items-center justify-center">
-                      <p className=" " onClick={()=>setplayStatus(!playStatus)}><i className={playStatus?"ri-pause-fill":"ri-play-line"}></i></p>
+                      <p className="ml-1.5 " onClick={()=>setplayStatus(!playStatus)}><i className={playStatus?"ri-pause-fill":"ri-play-line"}></i></p>
                 </div>
           </div>
     </div>
