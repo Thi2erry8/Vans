@@ -5,6 +5,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body{
+  overflow-x: hidden;
+}
 input:focus {
       outline: none;
       box-shadow: none;
@@ -52,4 +55,29 @@ input:focus {
   .info-text {
     @apply  text-slate-500 text-lg leading-7;
   }
+}
+.menu_btn{
+  display: none;
+}
+
+/*          RESPONSIVE          */
+ 
+
+/*Tablet*/
+@media(max-width:768px){
+
+}
+
+
+/*Mobile*/
+@media(max-width:640px){
+/*   header ul{
+    position: fixed;
+    margin-top: 100vw;
+    display: none;
+    width: 80%;
+    flex-direction: column;
+    background-color: white;
+  } */
+  
 }
