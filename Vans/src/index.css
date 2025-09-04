@@ -60,24 +60,4 @@ input:focus {
   display: none;
 }
 
-/*          RESPONSIVE          */
- 
 
-/*Tablet*/
-@media(max-width:768px){
-
-}
-
-
-/*Mobile*/
-@media(max-width:640px){
-/*   header ul{
-    position: fixed;
-    margin-top: 100vw;
-    display: none;
-    width: 80%;
-    flex-direction: column;
-    background-color: white;
-  } */
-  
-}
